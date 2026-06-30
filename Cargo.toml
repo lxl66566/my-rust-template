@@ -14,3 +14,10 @@ rust-version = "1.85"
 version      = "0.1.0"
 
 [dependencies]
+
+# If you are building bin target, uncomment this
+# [profile.release]
+# lto       = true
+# opt-level = "s"
+# panic     = "abort"
+# strip     = true
