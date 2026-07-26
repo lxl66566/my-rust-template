@@ -3,8 +3,8 @@ authors      = ["lxl66566 <lxl66566@gmail.com>"]
 categories   = ["xxx"]
 description  = "xxx"
 edition      = "2024"
-exclude      = ["AGENTS.md", ".github", ".opencode", ".taplo.toml"]
 homepage     = "https://github.com/lxl66566/xxx"
+include      = ["/CHANGELOG.md", "/LICENSE-*", "/README.md", "/src/**"]
 keywords     = ["xxx"]
 license      = "MIT OR Apache-2.0"
 name         = "xxx"
@@ -12,6 +12,22 @@ readme       = "README.md"
 repository   = "https://github.com/lxl66566/xxx"
 rust-version = "1.85"
 version      = "0.1.0"
+
+[lints.rust]
+future_incompatible   = "warn"
+nonstandard_style     = "warn"
+rust_2018_idioms      = "warn"
+unsafe_code           = "allow"
+unused_qualifications = "warn"
+
+[lints.clippy]
+all                     = { level = "warn", priority = -1 }
+cargo                   = { level = "warn", priority = -1 }
+doc_markdown            = "allow"
+missing_errors_doc      = "allow"
+missing_panics_doc      = "allow"
+multiple_crate_versions = "allow"
+pedantic                = { level = "warn", priority = -1 }
 
 [dependencies]
 

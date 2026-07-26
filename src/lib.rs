@@ -1,10 +1,6 @@
-#![warn(clippy::pedantic, clippy::cargo)]
-#![allow(
-    clippy::missing_panics_doc,
-    clippy::missing_errors_doc,
-    clippy::doc_markdown
-)]
+//! Placeholder crate, replace with real code.
 
+/// Placeholder function, replace with real code.
 pub fn test() {
     println!("Hello, world!");
 }
