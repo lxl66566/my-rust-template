@@ -13,9 +13,7 @@ repository   = "https://github.com/lxl66566/xxx"
 rust-version = "1.85"
 version      = "0.1.0"
 
-[lints.rust]
-unsafe_code           = "allow"
-unused_qualifications = "warn"
+[dependencies]
 
 [lints.clippy]
 all                     = { level = "warn", priority = -1 }
@@ -25,8 +23,14 @@ missing_errors_doc      = "allow"
 missing_panics_doc      = "allow"
 multiple_crate_versions = "allow"
 pedantic                = { level = "warn", priority = -1 }
+wildcard_imports        = "allow"
 
-[dependencies]
+[lints.rust]
+unsafe_code           = "allow"
+unused_qualifications = "warn"
+
+[profile.dev]
+incremental = true  # Compile your binary in smaller steps.
 
 # If you are building bin target, uncomment this
 # [profile.release]
