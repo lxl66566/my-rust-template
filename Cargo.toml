@@ -1,17 +1,16 @@
 [package]
-authors      = ["lxl66566 <lxl66566@gmail.com>"]
-categories   = ["xxx"]
-description  = "xxx"
-edition      = "2024"
-homepage     = "https://github.com/lxl66566/xxx"
-include      = ["/CHANGELOG.md", "/LICENSE-*", "/README.md", "/benches/**", "/src/**", "/tests/**"]
-keywords     = ["xxx"]
-license      = "MIT OR Apache-2.0"
 name         = "xxx"
-readme       = "README.md"
-repository   = "https://github.com/lxl66566/xxx"
-rust-version = "1.85"
 version      = "0.1.0"
+edition      = "2024"
+rust-version = "1.85"
+description  = "xxx"
+readme       = "README.md"
+homepage     = "https://github.com/lxl66566/xxx"
+repository   = "https://github.com/lxl66566/xxx"
+license      = "MIT OR Apache-2.0"
+keywords     = ["xxx"]
+categories   = ["xxx"]
+include      = ["/CHANGELOG.md", "/LICENSE-*", "/README.md", "/benches/**", "/src/**", "/tests/**"]
 
 [dependencies]
 
